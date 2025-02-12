@@ -1,0 +1,246 @@
+html {
+    height: auto;
+}
+
+body {
+    margin: 75px 0 0 0;
+    background-color: #890087;
+}
+
+/* begin header */
+
+header {
+    height: 75px;
+    width: 100%;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    position: fixed;
+    opacity: 1;
+    /* border-style: none none dotted; */
+    /* border-color: rgba(150, 255, 255, 0.8); */
+    font-size: 18px;
+}
+
+header ul {
+    height: 55px;
+    margin: auto;
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#640000+0,890087+100 */
+    background: linear-gradient(to bottom,  #300030 0%,#890087 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+header li {
+    display: inline-block;
+    height: 20px;
+    margin: 0 20px;
+    padding: 15px 20px;
+    vertical-align: middle;
+    border: 3px solid rgba(255, 0, 0, 0.0);
+    border-radius: 20px;
+    background-color: #ff8fd6;
+}
+
+header a {
+    color: #004040;
+    text-decoration: none;
+}
+
+header li:hover {
+    border: 3px solid #008080;
+    transition: border 0.3s;
+}
+
+li.active {
+    background-color: #ac5e8f;
+    color: #00c0c0;
+}
+
+/* end header */
+
+/* begin page content */
+
+.main {
+    display: inline-block;
+    margin: 25px 0 25px 0;
+    text-align: center;
+    background-color: #26427e;
+    border: 5px solid #ff8fd6;
+    color: #ff8fd6;
+    border-radius: 20px;
+
+}
+
+.content {
+    padding: 0 10%;
+}
+
+.main img {
+    width: 60%;
+}
+
+.main h1 {
+    font-size: 50px;
+}
+
+.main h2 {
+    font-size: 40px;
+}
+
+.main p {
+    font-size: 20px;
+}
+
+.main a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.main a:hover, a:active {
+    text-decoration: underline;
+}
+
+div.game {
+    display: inline-block;
+    width: 75%;
+    margin: 0 0 25px 0;
+    padding: 0 0 20px 0;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+}
+
+div.game > a {
+    color: white;
+}
+
+div.game > a:hover, a:active {
+    text-decoration: none;
+}
+
+div.game > a > img {
+    width: 20%;
+    margin: 30px 0 20px 0;
+}
+
+div.game > a > h2 {
+    margin: 10px;
+}
+
+div.game > a > p {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.osu {
+    background-color: #ef6da7;
+}
+
+.tetrio {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#df4eaa+0,7e5fe3+33,2f51aa+66,15919d+100 */
+    background: linear-gradient(to right,  #df4eaa 0%,#7e5fe3 33%,#2f51aa 66%,#15919d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.retro {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#012d93+0,1c2e3f+51,6c6d30+100 */
+    background: linear-gradient(to right,  #012d93 0%,#1c2e3f 51%,#6c6d30 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.steam {
+    background-color: #171d25;
+}
+
+strong {
+    color: yellow;
+}
+
+@keyframes pulse {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
+
+em {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+iframe {
+    width: 90%;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+/* end page content */
+
+/* begin footer */
+
+footer {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#890087+0,db00d7+100 */
+    background: linear-gradient(to bottom,  #890087 0%,#db00d7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: lime;
+    /* border-top-style: solid;
+    border-color: #ff8fd6;
+    border-width: 5px; */
+    text-align: center;
+    font-size: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* end footer */
+
+/* begin site layout */
+
+.column {
+    float: left;
+}
+
+.column.side {
+    width: 12.5%;
+    display: inline;
+    visibility: hidden;
+}
+
+.column.middle {
+    width: 75%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* end site layout */
+
+/* FONT STYLING */
+
+.doto {
+    font-family: "Doto", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "ROND" 0;
+}
+
+
+.raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
